@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a class="active" href="#home">Chart Maker</a>
+        </div>
+        <div class="container-body">
+            <div class="sidenav">
+                <div class="shapes">
+                    <div id="drag-items" class="drag-items arrowdiv">
+                        <img src="/assets/Arrow.png" draggable="true" id="arrow" onclick=newConnecter()>
+                        <p>Connecter</p>
+                    </div>
+                    <div id="drag-items" class="drag-items">
+                        <img src="/assets/Text.png" draggable="true" id="text" />
+                        <p>Text</p>
+                    </div>
+                    <div id="drag-items" class="drag-items">
+                        <img src="/assets/Start_Stop.png" draggable="true" id="roundrect" class="rect"/>
+                        <p>Start/stop</p>
+                    </div>
+                    <div id="drag-items" class="drag-items ">
+                        <img src="/assets/Process.png" draggable="true" id="rectangle" class="rect"/>
+                        <p>Process</p>
+                    </div>
+                    <div id="drag-items" class="drag-items">
+                        <img src="/assets/Decision.png" draggable="true" id="rhombus" />
+                        <p>Decision</p>
+                    </div>
+                    <div id="drag-items" class="drag-items ">
+                        <img src="/assets/Parallelogram.png" draggable="true" id="input" class="rect" />
+                        <p>Input</p>
+                    </div>
+                    <div id="drag-items" class="drag-items">
+                        <img src="/assets/Display.png" draggable="true" id="display" />
+                        <p>Display</p>
+                    </div>
+
+                    <div id="drag-items" class="drag-items">
+                        <img src="/assets/Storage.png" draggable="true" id="storage" />
+                        <p>Storage</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-grid" id="grid">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/konva@7.0.3/konva.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
